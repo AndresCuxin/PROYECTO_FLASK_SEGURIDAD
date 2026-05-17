@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="login-box">
+
+    <h2>Usuarios registrados</h2>
+
+    <table border="1" width="100%">
+        <tr>
+            <th>Usuario</th>
+            <th>Rol</th>
+        </tr>
+
+        {% for user in users %}
+        <tr>
+            <td>{{ user[0] }}</td>
+            <td>{{ user[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+
+    <a href="/dashboard">Volver</a>
+
+</div>
+
+</body>
+</html>

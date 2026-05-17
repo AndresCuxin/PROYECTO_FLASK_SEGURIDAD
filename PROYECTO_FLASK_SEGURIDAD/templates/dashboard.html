@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Bienvenido {{ session['user'] }}</h2>
+
+    <a href="/users">Gestión usuarios</a><br><br>
+
+    <a href="/upload">Subir archivos</a><br><br>
+
+    <a href="/protected">Zona protegida</a><br><br>
+
+    <a href="/logout">Cerrar sesión</a>
+</div>
+
+</body>
+</html>
